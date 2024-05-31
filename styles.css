@@ -8,7 +8,7 @@ main {
   font-family: "Arial", sans-serif;
   /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("/images/original-aa89c00169ce0f583bb32b2b2842c377.jpg");
+    url("./images/original-aa89c00169ce0f583bb32b2b2842c377.jpg");
   display: flex;
   justify-content: center;
   align-items: center;
