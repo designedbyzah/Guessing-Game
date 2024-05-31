@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  font-family: "Arial", sans-serif;
+  /* background: linear-gradient(to right, #ff7e5f, #feb47b); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("/images/original-aa89c00169ce0f583bb32b2b2842c377.jpg");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  width: 80%;
+  max-width: 420px;
+  animation: fadeIn 2s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 1.25rem;
+}
+
+input {
+  padding: 1rem;
+  /* width: calc(100% - 30px); */
+  width: 100%;
+  margin: 1.25rem 0;
+  border: none;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  outline: none;
+  transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+}
+
+button {
+  padding: 1rem 2rem;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: 40%;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+button:active {
+  background-color: #1e7e34;
+}
+
+#feedback {
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+#attemptsLeft {
+  margin-top: 0.75rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.25rem;
+  color: #ddd;
+}
+
+#restartButton {
+  padding: 1rem 2rem;
+  width: 40%;
+  border: none;
+  background-color: #512a9a;
+  color: white;
+  border-radius: 0.25rem;
+  font-size: 1.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+#restartButton:hover {
+  background-color: #452580;
+  transform: scale(1.05);
+}
+
+#restartButton:active {
+  background-color: #3f2275;
+}
