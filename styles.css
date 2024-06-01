@@ -73,7 +73,6 @@ button {
   font-size: 1.25rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
-  width: 40%;
 }
 
 button:hover {
@@ -100,7 +99,6 @@ button:active {
 
 #restartButton {
   padding: 1rem 2rem;
-  width: 40%;
   border: none;
   background-color: #512a9a;
   color: white;
@@ -116,4 +114,26 @@ button:active {
 
 #restartButton:active {
   background-color: #3f2275;
+}
+
+@media screen and (max-width: 480px) {
+  button {
+    padding: 1rem;
+    width: 100%;
+  }
+
+  #restartButton {
+    padding: 1rem;
+    width: 100%;
+  }
+  main {
+    padding: 1.25rem;
+    width: 100vw;
+    height: 100svh;
+  }
+  .container {
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 100%;
+  }
 }
